@@ -1,0 +1,9 @@
+<app-add-student></app-add-student>
+<div class="container bg-light">
+    <div class="col-md-12 text-center">
+        <button type="button" class="btn btn-success">Add</button>
+    </div>
+</div>
+<div *ngFor="let student of students">
+    <app-student-item [student]="student" (toremove)="deleteit($event)"></app-student-item>
+</div>
