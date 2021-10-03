@@ -2,6 +2,11 @@
     <div class="col-sm-3 my-3">{{student.name}}</div>
     <div class="col-sm-3 my-3">year-{{student.year}}</div>
     <div class="col-sm-3 my-3">Rollno-{{student.rollno}}</div>
-    <div class="col-sm-3 my-3"><button class=" btn btn-danger" (click)="onClick(student)">remove</button></div>
+    <div class="col-sm-3 my-3"><button class=" btn btn-danger" (click)="onClick(student)">Remove</button>&nbsp;&nbsp;<button class=" btn btn-primary" (click)="onEdit(student)">{{title}}</button> </div>
   
+</div>
+<div class="row text-center" *ngIf="toedit">
+    <div class="col-sm-3 my-3"><input type="text" placeholder="Enter Name" [(ngModel)]="name" ></div>
+    <div class="col-sm-3 my-3"><input type="number" placeholder="Enter Year" [(ngModel)]="year" ></div>
+    <div class="col-sm-3 my-3"><input type="number" placeholder="Enter Roll No" [(ngModel)]="rollno"></div>
 </div>

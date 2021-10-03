@@ -1,16 +1,17 @@
-<!--<form (ngSubmit="onSubmit()")>
+<form (ngSubmit)="onSubmit()" class="studentadd">
     <div class="mb-3">
       <label for="name" class="form-label">Name</label>
-      <input type="text" [(ngmodel)]="name" class="form-control" id="name" aria-describedby="emailHelp">
+      <input type="text" [(ngModel)]="name" name="name" class="form-control" id="name">
 
     </div>
     <div class="mb-3">
       <label for="rollno" class="form-label">Roll No</label>
-      <input type="number" class="form-control" [(ngmodel)]="rollno" id="rollno">
+      <input type="number" class="form-control" [(ngModel)]="rollno" name="rollno" id="rollno">
     </div>
-    <div class="mb-3 form-check">
+    <div class="mb-3 ">
         <label for="year" class="form-label">Year</label>
-        <input type="number" class="form-control" id="year" [(ngmodel)]="year" >
+        <input type="number" class="form-control" id="year" [(ngModel)]="year"  name="year">
     </div>
-    <button type="submit" class="btn btn-primary">Add</button>
-  </form> -->
+    <button type="submit" class="btn btn-success">Click To Add Student</button>
+  </form>
+  

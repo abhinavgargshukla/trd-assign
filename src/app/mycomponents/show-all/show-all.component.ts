@@ -14,22 +14,22 @@ export class ShowAllComponent implements OnInit {
       {
         name:"Abhinav",
         rollno:2,
-        year: 3
+        year: 4
       },
       {
         name:"Raj",
-        rollno:2,
+        rollno:89,
+        year: 2
+      },
+      {
+        name:"Himadri",
+        rollno:36,
         year: 3
       },
       {
-        name:"Girdhari",
-        rollno:2,
-        year: 3
-      },
-      {
-        name:"Mahadev",
-        rollno:2,
-        year: 3
+        name:"Arthuro",
+        rollno:99,
+        year: 1
       }
     ]
    }
@@ -39,9 +39,15 @@ export class ShowAllComponent implements OnInit {
   deleteit(student:Student)
   {
     console.log(student.name);
-    console.log("yaha nhi aa gaye");
+    console.log("reached deleit");
     const index=this.students.indexOf(student);
     this.students.splice(index,1);
+  }
+  addit(student:Student)
+  {
+    console.log("hi reached here");
+    this.students.push(student);
+    console.log(this.students);
   }
 
 }
